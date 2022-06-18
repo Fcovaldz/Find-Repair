@@ -13,9 +13,9 @@ export function UserGuest() {
   }
   return (
     <ScrollView centerContent={true} style={styles.contenido}>
-      <Image source={require("../../../../assets/img/guest-account.png")} style={styles.imagen} />
+      <Image source={require("../../../../assets/img/servicio-reparacion.png")} style={styles.imagen} />
       <Text style={styles.titulo}>
-        Consulta tu perfil de Find Repair
+        Consulta tu perfil de REPARAMAX
       </Text>
       <Text style={styles.descripcion}>
       ¿Necesitas reparacion efectiva y de confianza?

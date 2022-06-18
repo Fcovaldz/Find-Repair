@@ -8,7 +8,7 @@ import { FormularioRegistro } from '../../../componentes/Authenticador'
 export function Registrarse() {
   return (
     <KeyboardAwareScrollView>
-     <Image source={require("../../../../assets/img/guest-account.png")} style={styles.imagen}/>
+     <Image source={require("../../../../assets/img/Repair1.png")} style={styles.imagen}/>
       <View style={styles.contenido}>
         <FormularioRegistro />
       </View>

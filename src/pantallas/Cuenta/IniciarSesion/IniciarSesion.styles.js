@@ -2,29 +2,20 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     imagen: {
-        resizeMode: "contain",
+        resizeMode: "cover",
         width: "100%",
-        height: 150,
-        marginTop: 20
-        
+        height: 250,
+        marginTop: 0 
     },
     contenido: {
         marginHorizontal: 40,
-        textAlign: "center",
-        marginTop: 20
     },
-    input: {
-        width: "100%",
-        marginTop: 20
+    textRegistro: {
+        marginTop: 15,
+        marginHorizontal: 10
     },
-    icon: {
-        color: "#c1c1c1"
-    },
-    btnContenedor: {
-        marginTop: 20,
-        alignItems: "center"
-    },
-    btn: {
-        backgroundColor: "#00a680"
+    btnRegistro: {
+        color: "#00a680",
+        fontWeight: "bold"
     }
 });

@@ -1,1 +1,2 @@
-export * from './FormularioRegistro'
+export * from './FormularioRegistro';
+export * from './FormIniciarSesion'

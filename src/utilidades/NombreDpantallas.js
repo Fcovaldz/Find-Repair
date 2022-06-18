@@ -1,12 +1,9 @@
+
 const contratistaStack = {
     tab: "ContratistasTab",
-    contratistasScreen: "ContratistasScreen",
-   
-}
-const destacadoStack = {
-    tab: "DestacadosTab",
-    destacado: "Destacados",
-    agregarContratista: "AgregarContratista"
+    contratista: "Contratistas",
+    agregarContratista: "AgregarContratista",
+    contratist: "Contratista"
 }
 const rankingStack = {
     tab: "RankingTab",
@@ -17,6 +14,7 @@ const buscadorStack = {
     buscador: "Buscador"
 }
 const miCuentaStack = {
+
     tab: "MiCuentaTab",
     micuenta: "Mi Cuenta",
     iniciarSesion: "Iniciar Sesion",
@@ -25,7 +23,6 @@ const miCuentaStack = {
 
 export const pantalla = {
     contratista: contratistaStack,
-    destacado: destacadoStack,
     ranking: rankingStack,
     buscador: buscadorStack,
     micuenta: miCuentaStack

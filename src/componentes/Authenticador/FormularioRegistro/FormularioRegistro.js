@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { View, Text } from 'react-native'
 import { Input, Icon, Button } from 'react-native-elements'
+import Toast from 'react-native-toast-message'
 import { useFormik } from "formik"
 import { useNavigation } from '@react-navigation/native'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import { initialValues, validationSchema } from './FormularioRegistro.data'
 import { styles } from './FormularioRegistro.styles'
-import { async } from '@firebase/util'
+import { pantalla } from '../../../utilidades'
+
 
 export function FormularioRegistro() {
 
@@ -25,8 +27,13 @@ export function FormularioRegistro() {
                     formValue.email,
                     formValue.password
                 );
-                navegacion.goBack();
+                navegacion.navigate(pantalla.micuenta.micuenta)
             } catch (error) {
+                Toast.show({
+                    type: "error",
+                    position: "bottom",
+                    text1: "¡Error!. Ya existe registrado un usuario con esta cuenta"
+                });
                 console.log(error)
                 
             }

@@ -6,7 +6,7 @@ import { Icon } from 'react-native-elements';
 
 //import { Cuenta } from '../pantallas/Cuenta';
 
-import { DestacadosStack } from './DestacadosStack';
+import { ContratistasStack } from './ContratistasStack';
 import { RankingStack } from './RankingStack';
 import { BuscadorStack } from './BuscadorStack';
 import { CuentaStack } from './CuentaStack';
@@ -27,8 +27,8 @@ export function AppNavegacion() {
             tabBarIcon: ({ color, size }) => screenOptions( route, color, size)
         })}>
             <Tab.Screen
-            name={pantalla.destacado.tab}
-            component={DestacadosStack}
+            name={pantalla.contratista.tab}
+            component={ContratistasStack}
             options={{ title: "Contratistas"}}
             />
            
@@ -56,14 +56,11 @@ export function AppNavegacion() {
 function screenOptions(route, color, size) {
     let iconNombre;
 
-    if(route.name === pantalla.destacado.tab) {
+    if(route.name === pantalla.contratista.tab) {
         iconNombre = "compass-outline";
     }
     if(route.name === pantalla.ranking.tab) {
         iconNombre = "star-outline";
-    }
-    if(route.name === pantalla.contratista.tab) {
-        iconNombre = "compass-outline";
     }
     if(route.name === pantalla.buscador.tab) {
         iconNombre = "magnify";
